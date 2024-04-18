@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 import SlideUp from "../SlideUp"
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import { prefix } from "../../../prefix"
 
 const projects = [
   {
@@ -61,7 +62,7 @@ const ProjectsSection = () => {
                   <div className=" md:w-1/2">
                     <Link href={`${project.github}`}>
                       <Image
-                        src={project.image}
+                        src={`${prefix}` + project.image}
                         alt=""
                         width={1000}
                         height={1000}
