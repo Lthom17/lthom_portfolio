@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "gh-pages -d out -t true",
+    "static": "next build && next export && touch ./out/.nojekyll && echo 'https://lthom17.github.io/lthom_portfolio/' > ./out/CNAME"
   },
   "dependencies": {
     "@types/react": "^18.2.57",
