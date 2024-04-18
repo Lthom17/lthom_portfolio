@@ -9,7 +9,6 @@ const basePath = `/${repo}`
 const nextConfig = {
     basePath: basePath,
     assetPrefix: assetPrefix,
-    distDir: "dist",
     output: 'export',
 
 
