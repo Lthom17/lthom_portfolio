@@ -13,7 +13,7 @@ if (isGithubActions) {
 }
 
 const nextConfig = {
-    basePath: basePath,
+    basePath: '/lthom_portfolio',
     assetPrefix: '/lthom_portfolio',
     output: 'export',
 };
