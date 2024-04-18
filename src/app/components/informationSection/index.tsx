@@ -19,7 +19,7 @@ const InformationSection = () => {
             <span className="font-semibold text-teal-600">
               Full Stack Software Engineer{" "}
             </span>
-                        based in St.Paul, Minnesota. I am interested in building software that solves big problems.
+                        based in St.Paul, Minnesota. I am interested in building software that solves big problems
                         and helps to enhance the lives of people!
           </p>
           <Link
