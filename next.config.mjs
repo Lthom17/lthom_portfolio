@@ -1,17 +1,24 @@
 /** @type {import('next').NextConfig} */
-// const isProduction = process.env.NODE_ENV;
+// next.config.js
 
-const repo = 'lthom_portfolio'
-const assetPrefix = `/${repo}/`
-const basePath = `/${repo}`
+const isGithubActions = process.env.GITHUB_ACTIONS || false
 
+let assetPrefix = '';
+let basePath = '';
+
+if (isGithubActions) {
+    // trim off `<owner>/`
+    const repo = process.env.GITHUB_REPOSITORY.replace(/.*?\//, '');
+
+
+    assetPrefix = `/${repo}/`;
+    basePath = `/${repo}`;
+}
 
 const nextConfig = {
     basePath: basePath,
     assetPrefix: assetPrefix,
     output: 'export',
-
-
 };
 
 export default nextConfig;
