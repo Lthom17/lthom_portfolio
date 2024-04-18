@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const isProduction = process.env.NODE_ENV === "production";
+// const isProduction = process.env.NODE_ENV;
 
 const repo = 'lthom_portfolio'
 const assetPrefix = `/${repo}/`
@@ -7,7 +7,7 @@ const basePath = `/${repo}`
 
 
 const nextConfig = {
-    basePath: isProduction ? basePath : "",
+    basePath: basePath,
     assetPrefix: assetPrefix,
     distDir: "dist",
     output: 'export',
