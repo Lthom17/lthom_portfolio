@@ -65,7 +65,7 @@ const ProjectsSection = () => {
                   <div className=" md:w-1/2">
                     <Link href={`${project.github}`}>
                       <Image
-                        src={basePath ? `${basePath}` + project.image : project.image }
+                        src={`${basePath}` + project.image }
                         alt=""
                         width={1000}
                         height={1000}
