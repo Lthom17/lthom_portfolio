@@ -12,6 +12,7 @@ if (isDev) {
 
 const nextConfig = {
     basePath: base,
+    output: "export",
 };
 
 export default nextConfig;
