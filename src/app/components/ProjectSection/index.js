@@ -46,6 +46,9 @@ const projects = [
 ]
 
 const ProjectsSection = () => {
+
+  const { basePath } = nextConfig;
+
   return (
     <section id="projects">
       <h1 className="my-10 text-center font-bold text-4xl">
@@ -62,7 +65,7 @@ const ProjectsSection = () => {
                   <div className=" md:w-1/2">
                     <Link href={`${project.github}`}>
                       <Image
-                        src={`${nextConfig.basePath}` + project.image}
+                        src={basePath ? `${basePath}` + project.image : project.image }
                         alt=""
                         width={1000}
                         height={1000}

@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 // next.config.js
 
-const isProd = process.env.NODE_ENV === "production";
+const isDev = process.env.NODE_ENV === "development";
 
-let base = '';
+let base = '/lthom_portfolio';
 
-if (isProd) {
+if (isDev) {
     // trim off `<owner>/`
-    const repo = 'lthom_portfolio'
-    base = `/${repo}`;
+    base = '';
 }
 
 const nextConfig = {
