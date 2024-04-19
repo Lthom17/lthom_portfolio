@@ -1,5 +1,6 @@
- import React from "react"
+import React from "react"
 import Image from "next/image"
+import nextConfig from '../../../../next.config.mjs'
 
 const skills = [
   { skill: "Java" },
@@ -16,7 +17,7 @@ const skills = [
 ]
 
 export default function AboutSection(){
-
+const { basePath } = nextConfig;
   return (
     <section id="about">
       <div className="my-12 pb-12 md:pt-16 md:pb-48">
@@ -79,7 +80,7 @@ export default function AboutSection(){
               })}
             </div>
             <Image
-              src="/hi.png"
+              src={`${basePath}/hi.png`}
               alt="hello_img"
               width={325}
               height={325}
