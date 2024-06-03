@@ -11,15 +11,14 @@ const projects = [
     description:
       "Bookworm serves as the Frontend UI of the Bookworm application. Built using React, this application facilitates users in digitally exploring and studying various books.",
     image: "/books.jpg",
-    github: "https://github.com/Lthom17/BookWormClient/tree/master",
-
+    github: "https://github.com/Lthom17/BookwormUI",
   },
   {
     name: "Bookworm Service",
-    description: "This service serves as a Backend to the Bookworm application. It is built with Java and SpringBoot. It connects to the openLibrary api to serve up requests for data.",
+    description:
+      "This service serves as a Backend to the Bookworm application. It is built with Java and SpringBoot. It connects to the openLibrary api to serve up requests for data.",
     image: "/Library.jpg",
     github: "https://github.com/Lthom17/BookWormServer",
-
   },
   {
     name: "Bookworm Database",
@@ -27,23 +26,23 @@ const projects = [
       "This repository contains the code for the database container for the Bookworm application.",
     image: "/storage.jpg",
     github: "https://github.com/Lthom17/BookWormDatabase",
-    },
-  
-   {
+  },
+
+  {
     name: "Field Agent Application Assessment",
     description:
       "This assessment takes the beginning code of a secret field agent tracking application and has the student make updates to the application.  This repository contains my code for updating the Backend service (Java) and Frontend UI (React).",
     image: "/spy.jpg",
     github: "https://github.com/Lthom17/week-9-assessment",
-    },
-   {
+  },
+  {
     name: "E-commerce A/B Test ",
     description:
       "The purpose of this project is to assist an e-commerce business in understanding the results of an A/B test run different versions of their landing page. The data analysis is done using Python, Jupiter Notebooks, and the MatPlotLib, Pandas, and Numpy libraries",
     image: "/ecommerce.jpg",
     github: "https://github.com/Lthom17/analyze_ab_test",
   },
-]
+];
 
 const ProjectsSection = () => {
 
