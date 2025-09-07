@@ -4,54 +4,62 @@ import Link from "next/link";
 import SlideUp from "../SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
+import accessibility from "../../public/accessibility.jpg";
+import consortium from "../../public/consortium.jpg";
+import books from "../../public/books.jpg";
+import library from "../../public/Library.jpg";
+import storage from "../../public/storage.jpg";
+import spy from "../../public/spy.jpg";
+import ecommerce from "../../public/ecommerce.jpg";
+
 const projects = [
   {
     name: "Discount Wheel",
     description:
       "The discount wheel component creates an interactive experience for users to receive discounts. It is fully keyboard accessible, allowing users to easily navigate to and activate the spin button without a mouse. To support users with visual impairments, the final discount result is announced clearly by screen readers using ARIA live regions. The component also respects operating system preferences for reduced motion, replacing the spinning animation with a simple fade effect for a more comfortable user experience.",
-    image: "/accessibility.jpg",
+    image: accessibility,
     github: "https://github.com/Lthom17/discount_wheel",
   },
   {
     name: "Consortium Website Rebuild",
     description:
       "A full rebuild of the Consortium website with added accessibility and mobile responsiveness updates",
-    image: "/consortium.jpg",
+    image: consortium,
     github: "https://consortium.umn.edu",
   },
   {
     name: "Bookworm Client",
     description:
       "Bookworm serves as the Frontend UI of the Bookworm application. Built using React, this application facilitates users in digitally exploring and studying various books.",
-    image: "/books.jpg",
+    image: books,
     github: "https://github.com/Lthom17/BookwormUI/tree/main",
   },
   {
     name: "Bookworm Service",
     description:
       "This service serves as a Backend to the Bookworm application. It is built with Java and SpringBoot. It connects to the openLibrary api to serve up requests for data.",
-    image: "/Library.jpg",
+    image: library,
     github: "https://github.com/Lthom17/BookWormServer",
   },
   {
     name: "Bookworm Database",
     description:
       "This repository contains the code for the database container for the Bookworm application.",
-    image: "/storage.jpg",
+    image: storage,
     github: "https://github.com/Lthom17/BookWormDatabase",
   },
   {
     name: "Field Agent Application Assessment",
     description:
       "This assessment takes the beginning code of a secret field agent tracking application and has the student make updates to the application. This repository contains my code for updating the Backend service (Java) and Frontend UI (React).",
-    image: "/spy.jpg",
+    image: spy,
     github: "https://github.com/Lthom17/week-9-assessment",
   },
   {
     name: "E-commerce A/B Test ",
     description:
       "The purpose of this project is to assist an e-commerce business in understanding the results of an A/B test run different versions of their landing page. The data analysis is done using Python, Jupiter Notebooks, and the MatPlotLib, Pandas, and Numpy libraries",
-    image: "/ecommerce.jpg",
+    image: ecommerce,
     github: "https://github.com/Lthom17/analyze_ab_test",
   },
 ];
