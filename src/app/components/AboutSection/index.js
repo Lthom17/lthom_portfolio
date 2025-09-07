@@ -2,17 +2,17 @@
 import Image from "next/image"
 
 const skills = [
-  { skill: "Java" },
-  { skill: "SpringBoot" },
-  { skill: "SQL" },
-  { skill: "JavaScript" },
-  { skill: "Python" },
   { skill: "React" },
   { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
+  { skill: "WAVE" },
+    { skill: "SQL" },
+  { skill: "JavaScript" },
+  { skill: "PHP" }, 
+  { skill: "Java" },
+  { skill: "SpringBoot" },
   { skill: "Git" },
   { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+
 ]
 
 export default function AboutSection(){
@@ -41,7 +41,7 @@ export default function AboutSection(){
             <p>
               I graduated from Oakland University, Michigan in 2005
                           with a BS in Biology. After college I was able to gain technical skills 
-                          through the Dev10 Java Software Engineer Bootcamp and a variety of online programs and self education. 
+                          through the Dev10 Java Software Engineer Boot Camp and a variety of online programs and self education. 
                           I am currently working as a contracted Fullstack Software Engineer for Best Buy.
             </p>
             <br />

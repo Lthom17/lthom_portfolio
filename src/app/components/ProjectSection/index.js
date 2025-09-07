@@ -6,6 +6,20 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
   {
+    name: "Discount Wheel",
+    description:
+      "The discount wheel component creates an interactive experience for users to receive discounts. It is fully keyboard accessible, allowing users to easily navigate to and activate the spin button without a mouse. To support users with visual impairments, the final discount result is announced clearly by screen readers using ARIA live regions. The component also respects operating system preferences for reduced motion, replacing the spinning animation with a simple fade effect for a more comfortable user experience.",
+    image: "/accessibility.jpg",
+    github: "https://github.com/Lthom17/discount_wheel",
+  },
+  {
+    name: "Consortium Website Rebuild",
+    description:
+      "A full rebuild of the Consortium website with added accessibility and mobile responsiveness updates",
+    image: "/consortium.jpg",
+    github: "https://consortium.umn.edu",
+  },
+  {
     name: "Bookworm Client",
     description:
       "Bookworm serves as the Frontend UI of the Bookworm application. Built using React, this application facilitates users in digitally exploring and studying various books.",
