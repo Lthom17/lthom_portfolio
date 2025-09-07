@@ -1,8 +1,8 @@
-import React from "react"
-import Image from "next/image"
-import Link from "next/link"
-import SlideUp from "../SlideUp"
-import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import SlideUp from "../SlideUp";
+import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 const projects = [
   {
@@ -40,11 +40,10 @@ const projects = [
     image: "/storage.jpg",
     github: "https://github.com/Lthom17/BookWormDatabase",
   },
-
   {
     name: "Field Agent Application Assessment",
     description:
-      "This assessment takes the beginning code of a secret field agent tracking application and has the student make updates to the application.  This repository contains my code for updating the Backend service (Java) and Frontend UI (React).",
+      "This assessment takes the beginning code of a secret field agent tracking application and has the student make updates to the application. This repository contains my code for updating the Backend service (Java) and Frontend UI (React).",
     image: "/spy.jpg",
     github: "https://github.com/Lthom17/week-9-assessment",
   },
@@ -70,17 +69,16 @@ const ProjectsSection = () => {
           return (
             <div key={idx}>
               <SlideUp offset="-300px 0px -300px 0px">
-                <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
-                  <div className=" md:w-1/2">
-                    <Link href={`${project.github}`}>
-                      <Image
-                        src={project.image}
-                        alt=""
-                        width={1000}
-                        height={1000}
-                        className="rounded-xl shadow-xl hover:opacity-70"
-                      />
-                    </Link>
+                <div className="flex flex-col animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
+                  <div className="md:w-1/2">
+                    {/* The link href should point to the project GitHub, which is correct, but there is no image link, just a link on the image to GitHub*/}
+                    <Image
+                      src={project.image}
+                      alt=""
+                      width={1000}
+                      height={1000}
+                      className="rounded-xl shadow-xl hover:opacity-70"
+                    />
                   </div>
                   <div className="mt-8 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
@@ -105,12 +103,11 @@ const ProjectsSection = () => {
                 </div>
               </SlideUp>
             </div>
-          )
+          );
         })}
-        
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
