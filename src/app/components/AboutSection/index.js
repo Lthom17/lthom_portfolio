@@ -80,7 +80,7 @@ export default function AboutSection(){
             </div>
             <Image
               src="/hi.png"
-              alt="hello_img"
+              alt="Female avatar with blond hair, wearing glasses"
               width={325}
               height={325}
               className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
