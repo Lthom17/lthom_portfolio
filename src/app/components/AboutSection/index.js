@@ -79,7 +79,7 @@ export default function AboutSection(){
               })}
             </div>
             <Image
-              src="/hi.png"
+              src="./hi.png"
               alt="Female avatar with blond hair, wearing glasses"
               width={325}
               height={325}
