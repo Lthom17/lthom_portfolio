@@ -104,12 +104,16 @@ const ProjectsSection = () => {
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
                       </Link>
-                      <Link href={`${project.github}`} target="_blank">
+                      {/* <Link
+                        href={`${project.github}`}
+                        target="_blank"
+                        aria-label={`View ${project.name} on GitHub`}
+                      >
                         <BsArrowUpRightSquare
                           size={30}
                           className="hover:-translate-y-1 transition-transform cursor-pointer"
                         />
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
