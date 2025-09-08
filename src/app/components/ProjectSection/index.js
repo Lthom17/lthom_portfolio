@@ -5,19 +5,25 @@ import SlideUp from "../SlideUp";
 import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs";
 
 
+
+
+
+
 const projects = [
   {
     name: "Discount Wheel",
     description:
       "The discount wheel component creates an interactive experience for users to receive discounts. It is fully keyboard accessible, allowing users to easily navigate to and activate the spin button without a mouse. To support users with visual impairments, the final discount result is announced clearly by screen readers using ARIA live regions. The component also respects operating system preferences for reduced motion, replacing the spinning animation with a simple fade effect for a more comfortable user experience.",
-    image: "/accessibility.jpg",
+    image: '/accessibility.jpg',
+    alt: "A laptop computer on a desk, featuring a keyboard, ready for use in a workspace setting.",
     github: "https://github.com/Lthom17/discount_wheel",
   },
   {
     name: "Consortium Website Rebuild",
     description:
       "A full rebuild of the Consortium website with added accessibility and mobile responsiveness updates",
-    image: "/consortium.jpg",
+    image: "/consortium.png",
+    alt: "Homepage of the University of Minnesota's Consortium of Law and Values Department, showcasing programs, faculty, and research opportunities.",
     github: "https://consortium.umn.edu",
   },
   {
@@ -25,6 +31,7 @@ const projects = [
     description:
       "Bookworm serves as the Frontend UI of the Bookworm application. Built using React, this application facilitates users in digitally exploring and studying various books.",
     image: "/books.jpg",
+    alt: "Multiple bright colored books stacked horizontally on a bookshelf.",
     github: "https://github.com/Lthom17/BookwormUI/tree/main",
   },
   {
@@ -32,6 +39,7 @@ const projects = [
     description:
       "This service serves as a Backend to the Bookworm application. It is built with Java and SpringBoot. It connects to the openLibrary api to serve up requests for data.",
     image: "/Library.jpg",
+    alt: "The interior of a large, four story library with multiple staircases.",
     github: "https://github.com/Lthom17/BookWormServer",
   },
   {
@@ -39,6 +47,7 @@ const projects = [
     description:
       "This repository contains the code for the database container for the Bookworm application.",
     image: "/storage.jpg",
+    alt: "A hallway with multiple storage units with pink doors.",
     github: "https://github.com/Lthom17/BookWormDatabase",
   },
   {
@@ -46,6 +55,7 @@ const projects = [
     description:
       "This assessment takes the beginning code of a secret field agent tracking application and has the student make updates to the application. This repository contains my code for updating the Backend service (Java) and Frontend UI (React).",
     image: "/spy.jpg",
+    alt: "Multiple black cameras in a grid with a column of white cameras.",
     github: "https://github.com/Lthom17/week-9-assessment",
   },
   {
@@ -53,6 +63,7 @@ const projects = [
     description:
       "The purpose of this project is to assist an e-commerce business in understanding the results of an A/B test run different versions of their landing page. The data analysis is done using Python, Jupiter Notebooks, and the MatPlotLib, Pandas, and Numpy libraries",
     image: "/ecommerce.jpg",
+    alt: "A street sign that reads 'e-commerce' next to a street light.",
     github: "https://github.com/Lthom17/analyze_ab_test",
   },
 ];
@@ -75,7 +86,7 @@ const ProjectsSection = () => {
                     {/* The link href should point to the project GitHub, which is correct, but there is no image link, just a link on the image to GitHub*/}
                     <Image
                       src={project.image}
-                      alt=""
+                      alt={project.alt}
                       width={1000}
                       height={1000}
                       className="rounded-xl shadow-xl hover:opacity-70"
