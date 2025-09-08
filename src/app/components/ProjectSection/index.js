@@ -14,7 +14,7 @@ const projects = [
     name: "Discount Wheel",
     description:
       "The discount wheel component creates an interactive experience for users to receive discounts. It is fully keyboard accessible, allowing users to easily navigate to and activate the spin button without a mouse. To support users with visual impairments, the final discount result is announced clearly by screen readers using ARIA live regions. The component also respects operating system preferences for reduced motion, replacing the spinning animation with a simple fade effect for a more comfortable user experience.",
-    image: '/accessibility.jpg',
+    image: '/lthom_portfolio/accessibility.jpg',
     alt: "A laptop computer on a desk, featuring a keyboard, ready for use in a workspace setting.",
     github: "https://github.com/Lthom17/discount_wheel",
   },
